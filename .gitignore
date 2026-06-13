@@ -1,0 +1,48 @@
+# Local runtime homes are never committed wholesale.
+.claude/
+.codex/
+
+# Secrets and local credentials.
+**/auth.json
+**/.credentials.json
+**/credentials.json
+**/settings.json
+!**/settings.example.json
+**/settings.local.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.env
+**/.env
+**/.env.*
+
+# Runtime state, history, logs, caches, and generated artifacts.
+**/history.jsonl
+**/session_index.jsonl
+**/sessions/
+**/archived_sessions/
+**/cache/
+**/tmp/
+**/.tmp/
+**/logs/
+**/log/
+**/telemetry/
+**/paste-cache/
+**/file-history/
+**/shell-snapshots/
+**/worktrees/
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/*.sqlite
+**/*.sqlite-shm
+**/*.sqlite-wal
+**/*.tar.gz
+**/*.bak
+**/*.backup*
+
+# Codex/Claude mutable persona state.
+**/state.json
+**/user_profile.json
+**/memory/session_index.md

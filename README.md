@@ -1,0 +1,56 @@
+# AI Agent Config Sync
+
+这个仓库只同步可共享的 Agent 配置，不同步本机运行态、账号、token、日志和历史。
+
+## 已同步内容
+
+| 路径 | 用途 |
+|---|---|
+| `codex/AGENTS.md` | Codex 全局行为规则 |
+| `codex/config.example.toml` | Codex 配置模板，不含本机路径和状态 |
+| `claude/CLAUDE.md` | Claude 全局行为规则 |
+| `claude/settings.example.json` | Claude 设置模板，不含鉴权 token |
+| `shared/skills/cc-persona/` | CC 人格 skill 的源码部分，排除了状态和记忆 |
+| `scripts/install.ps1` | 把共享配置安装到本机 |
+| `scripts/export-safe.ps1` | 从本机重新导出白名单配置 |
+| `scripts/check-secrets.ps1` | 提交前检查敏感文件和常见 token |
+
+## 绝不进仓库
+
+| 类型 | 例子 | 原因 |
+|---|---|---|
+| 鉴权 | `auth.json`、`.credentials.json`、`settings.json` | 可能包含 token |
+| 本机状态 | `state_*.sqlite`、`logs_*.sqlite`、`session_index.jsonl` | 运行态和历史 |
+| 会话历史 | `sessions/`、`history.jsonl`、`archived_sessions/` | 隐私和上下文泄露 |
+| 缓存产物 | `cache/`、`tmp/`、`plugins/cache/` | 体积大且不可移植 |
+| 人格记忆 | `state.json`、`user_profile.json`、`memory/session_index.md` | 长期偏好和私人记忆 |
+
+## 使用方式
+
+先检查仓库里没有敏感内容：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ./scripts/check-secrets.ps1
+```
+
+安装到当前机器：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ./scripts/install.ps1
+```
+
+如果要覆盖本机已有规则，先让脚本备份再覆盖：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ./scripts/install.ps1 -Force
+```
+
+重新从本机导出白名单内容：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ./scripts/export-safe.ps1
+```
+
+## 配置密钥
+
+`claude/settings.example.json` 里的 `ANTHROPIC_AUTH_TOKEN` 只放占位符。每台机器自己在本地 `~/.claude/settings.json` 或系统环境变量里配置真实 token，不要提交。

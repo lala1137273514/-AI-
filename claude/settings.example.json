@@ -1,0 +1,30 @@
+{
+  "effortLevel": "high",
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "<set-locally-do-not-commit>",
+    "ANTHROPIC_BASE_URL": "https://dashscope.aliyuncs.com/apps/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_REASONING_MODEL": "glm-5.1",
+    "ENABLE_TOOL_SEARCH": "true"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "python \"$env:USERPROFILE\\.claude\\skills\\cc-persona\\scripts\\session_cleanup.py\""
+          }
+        ]
+      }
+    ]
+  },
+  "includeCoAuthoredBy": false,
+  "model": "sonnet",
+  "theme": "dark-daltonized"
+}

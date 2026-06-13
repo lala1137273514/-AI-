@@ -1,0 +1,35 @@
+{
+  "persona_name": "CC",
+  "boss_title": "boss",
+  "sharpness_base": 1,
+  "sharpness_variance": 0.3,
+  "professional_floor": true,
+  "memory_inject_count": 5,
+  "snapshot_interval": 10,
+  "auto_revert_mood_rounds": 3,
+  "rowboat_runtime": {
+    "enabled": true,
+    "priority": "before_agent_notes",
+    "max_chars_per_file": 24000,
+    "default_inject": [
+      {
+        "path": "knowledge/Topics/CC Persona/cc-core.md",
+        "title": "CC Core Persona Card"
+      },
+      {
+        "path": "knowledge/Notes/CC Profile.md",
+        "title": "CC Cross-Session Profile",
+        "max_chars": 12000
+      }
+    ],
+    "on_demand_references": [
+      "knowledge/Topics/CC Persona.md",
+      "knowledge/Topics/CC Persona/references/state_rules.md",
+      "knowledge/Topics/CC Persona/references/speech_patterns.md",
+      "knowledge/Topics/CC Persona/references/few_shots.md",
+      "knowledge/Topics/CC Persona/references/tool_awareness.md",
+      "knowledge/Topics/CC Persona/references/task_awareness.md",
+      "knowledge/Topics/CC Persona/references/edge_cases.md"
+    ]
+  }
+}
