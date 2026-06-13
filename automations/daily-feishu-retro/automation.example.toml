@@ -1,0 +1,13 @@
+version = 1
+id = "daily-feishu-retro"
+kind = "cron"
+name = "Daily Feishu Retro"
+prompt = "Use [$feishu-retro-review](C:\\\\Users\\\\QYL\\\\.codex\\\\skills\\\\feishu-retro-review\\\\SKILL.md) as the only authoritative scheduled retrospective flow. Follow the current skill contract exactly: collect today's same-day chat inputs and `analysis_payload`, use `analysis_payload` as the primary evidence set, let Codex synthesize the final Chinese 5+1 retrospective with `今日概览 / 推进时间线 / 当前现状 / 下一步待办 / 今日思考 / 信息缺口（如有）`, then publish only through `scripts/publish_review.py` and confirm the bound chat receives the final document link. Ignore bot/system noise and the exact trigger message `review` if present. Treat images as first-class evidence, preserve UTF-8 Chinese text, and do not use legacy image-only repair flows or ad-hoc markdown publishing paths."
+status = "ACTIVE"
+rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SA,SU;BYHOUR=18;BYMINUTE=0"
+model = "gpt-5.4"
+reasoning_effort = "medium"
+execution_environment = "worktree"
+cwds = ["C:\\\\Users\\\\QYL\\\\Desktop\\\\work"]
+created_at = 1774951075237
+updated_at = 1776305493122

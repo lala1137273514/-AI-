@@ -1,0 +1,13 @@
+version = 1
+id = "morning-feishu-retro"
+kind = "cron"
+name = "Morning Feishu Retro"
+prompt = "Legacy morning retrospective automation kept only for reference. Do not use this as the main daily retrospective path. The authoritative scheduled run is `daily-feishu-retro` at 18:00 and follows the current `feishu-retro-review` contract."
+status = "PAUSED"
+rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SA,SU;BYHOUR=10;BYMINUTE=0"
+model = "gpt-5.4"
+reasoning_effort = "medium"
+execution_environment = "worktree"
+cwds = ["C:\\\\Users\\\\QYL\\\\Desktop\\\\work"]
+created_at = 1775007587649
+updated_at = 1775100000000

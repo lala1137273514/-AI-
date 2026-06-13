@@ -10,7 +10,8 @@ $blockedNames = @(
     "history.jsonl",
     "session_index.jsonl",
     "state.json",
-    "user_profile.json"
+    "user_profile.json",
+    "raw_memories.md"
 )
 
 $blockedSuffixes = @(
@@ -40,7 +41,10 @@ $blockedDirs = @(
     "shell-snapshots",
     "worktrees",
     "node_modules",
-    "__pycache__"
+    "__pycache__",
+    ".omx",
+    "tmp-profile",
+    ".lark-cli"
 )
 
 function Test-IsBlockedDir {
@@ -84,6 +88,7 @@ $secretPatterns = [ordered]@{
     "Generic sk token" = "\bsk-[A-Za-z0-9][A-Za-z0-9_\-]{16,}\b"
     "GitHub token" = "\bgh[pousr]_[A-Za-z0-9_]{20,}\b"
     "Anthropic token style" = "\bsk-ant-[A-Za-z0-9_\-]{20,}\b"
+    "Supabase publishable token" = "\bsb_publishable_[A-Za-z0-9_\-]{20,}\b"
     "JWT" = "\beyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\b"
 }
 

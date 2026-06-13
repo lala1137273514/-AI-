@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feishu Retro Review"
+  short_description: "Analyze a bound Feishu chat and publish a structured 5+1 daily retrospective"
+  default_prompt: "Use $feishu-retro-review only when the user says review, then collect today's full chat inputs and `analysis_payload`, use `analysis_payload` as the primary model-facing contract, let the model rewrite and compress the full-day record into the approved 5+1 retrospective structure, make every section analyze the entire same-day chat rather than a narrow slice, keep `推进时间线` focused on key process nodes with timestamps, let `当前现状` summarize end-of-day status by theme with lightweight grouped slices such as `事项状态 / 知识沉淀 / 资源与线索 / 阶段判断 / 待确认项` when supported, rebuild `下一步待办` from the full-day action pool instead of only explicit future-tense phrases, make `今日思考` come from the full-day pattern of plans, progress, testing, and blockers, treat downloaded images as first-class evidence with OCR only as fallback, use rich Lark-flavored Markdown where useful, and publish the final retrospective."
+
+policy:
+  allow_implicit_invocation: false

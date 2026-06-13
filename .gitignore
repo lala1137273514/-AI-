@@ -36,10 +36,13 @@
 **/logs/
 **/log/
 **/telemetry/
+**/.omx/
 **/paste-cache/
 **/file-history/
 **/shell-snapshots/
 **/worktrees/
+**/tmp-profile/
+**/.lark-cli/
 **/node_modules/
 **/__pycache__/
 **/*.pyc
@@ -54,3 +57,4 @@
 **/state.json
 **/user_profile.json
 **/memory/session_index.md
+**/raw_memories.md
