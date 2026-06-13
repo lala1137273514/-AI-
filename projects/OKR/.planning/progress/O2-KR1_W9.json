@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】AI 内部赋能专项正式启动（6/9 Kickoff，全员 9 人），确定三方向——AI Coach（教新人用 AI）、AI for design（生图锚点+双审计 agent+组件库规范输出）、AI for test（插扣读日志定位代码行+测试自动化）。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "6/11 对齐会三线 demo 展示：何尔宁项目驾驶舱/锚点方案/日志定位，秦宇龙 OpenClaw bot（sense-think-act），程楠测试框架+营销海报自动化。节奏：周二三做 demo→周四对齐→周五验收→第二周工程化。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

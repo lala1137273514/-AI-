@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】AI 赋能专项方向探索：参与 AI Coach / AI for design / AI for test 三方向 Kickoff 与对齐，确认 AI Coach 长期价值——降低公司内部 AI 使用门槛，将经验累积为知识库 + case/demo 复用。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "下周待办：整理云文档接入方式文档 + OpenClaw bot 经验库搭建，发团队共享，为后续路线图提供实践基础。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

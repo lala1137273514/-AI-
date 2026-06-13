@@ -11,6 +11,7 @@
 | `claude/CLAUDE.md` | Claude 全局行为规则 |
 | `claude/settings.example.json` | Claude 设置模板，不含鉴权 token |
 | `shared/skills/cc-persona/` | CC 人格 skill 的源码部分，排除了状态和记忆 |
+| `projects/OKR/` | OKR 项目资料与 `lark-okr` skill 源码，排除了本机设置和缓存 |
 | `scripts/install.ps1` | 把共享配置安装到本机 |
 | `scripts/export-safe.ps1` | 从本机重新导出白名单配置 |
 | `scripts/check-secrets.ps1` | 提交前检查敏感文件和常见 token |
@@ -23,6 +24,7 @@
 | 本机状态 | `state_*.sqlite`、`logs_*.sqlite`、`session_index.jsonl` | 运行态和历史 |
 | 会话历史 | `sessions/`、`history.jsonl`、`archived_sessions/` | 隐私和上下文泄露 |
 | 缓存产物 | `cache/`、`tmp/`、`plugins/cache/` | 体积大且不可移植 |
+| 项目本机设置 | `projects/**/.claude/settings.local.json`、`__pycache__/` | 机器权限和编译缓存 |
 | 人格记忆 | `state.json`、`user_profile.json`、`memory/session_index.md` | 长期偏好和私人记忆 |
 
 ## 使用方式

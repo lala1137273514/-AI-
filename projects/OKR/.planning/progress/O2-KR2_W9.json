@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】旅行规划提示词从 skill 到 LLM 转换：loona-travel-flow → compose_trip_options.yaml + compose_trip.yaml，7 个 session 完成只读分析避免过拟合，进入初步调优，未到可验收阶段。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "Agent UI 协议对齐（6/9 会议，秦宇龙/何尔宁/刘旭）：覆盖天气/日程/邮件/餐厅/新闻/旅行规划 UI 链路，敲定 AtoUI 协议——agent 直控前端显示，往模板槽位填 JSON。旅行规划由秦宇龙整理完整文档发刘旭作为测试用例。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

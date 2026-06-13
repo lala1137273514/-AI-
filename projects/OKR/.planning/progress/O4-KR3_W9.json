@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】Agent UI 协议对齐（6/9）：敲定 AtoUI 协议方案——agent 直接控制前端显示，往固定模板槽位填 JSON 信息，产品侧定义 UI 规则时可直接影响 agent 输出。后续需子夏定义组件库规则和容器规则。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "630 agent 文档产物生成（6/13 编辑）：推进 630 版本需求文档维护。旅行规划完整文档整理发刘旭作为 Agent UI 测试方案用例待完成。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

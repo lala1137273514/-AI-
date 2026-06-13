@@ -1,0 +1,46 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】周报/日报持续输出：飞书六天日报（cron 06-07~10 掉线期间通过本地扫描+会议纪要补全），W9 周报完成三源合并（飞书+本地 Claude+Codex）经双质检。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "AI 产品实习生面试支持：完成苏丽琴（6/11 NLP 背景）和张越（6/12 JHU 系统工程）面试，创建面试 SOP 文档。面试反馈待补。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "CLAUDE.md 规则迭代：新增并行拆分规则——多 session/多 agent 并行，减少时间与上下文隔离。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

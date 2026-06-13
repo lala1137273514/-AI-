@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】OpenClaw bot demo 展示（6/11 AI 内部赋能对齐会）：基于 sense-think-act 架构，可在飞书群接收消息、澄清需求、推荐 bot。当前功能较简单，后续可扩展到写 PRD 等流程。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "AI 赋能专项三线 demo 对齐：完成驾驶舱/锚点设计/测试自动化三线 demo 展示与方向收敛，周五 demo 验收 + 工程化落地可行性评估待推进。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

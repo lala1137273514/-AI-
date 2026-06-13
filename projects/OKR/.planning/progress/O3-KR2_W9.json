@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "【W9·06-13】Loona 交互工作台：立统一 UI Spec 铁律，本地调通基础交互（HTML/CSS/JS 零依赖），尚未正式演示。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "block_element_type": "paragraph",
+      "paragraph": {
+        "elements": [
+          {
+            "paragraph_element_type": "textRun",
+            "text_run": {
+              "text": "Agent UI 链路整理：完成天气/日程/邮件/餐厅/新闻/旅行规划 6 类工具 UI 链路文档化，明确 toast 交互、卡片互斥策略、轮播设计。旅行规划链路封装为 loona-travel-flow skill。",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

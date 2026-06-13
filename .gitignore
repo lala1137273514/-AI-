@@ -2,6 +2,14 @@
 .claude/
 .codex/
 
+# Project-local shared Claude skills may be committed when explicitly allowed.
+!projects/
+!projects/OKR/
+!projects/OKR/.claude/
+!projects/OKR/.claude/skills/
+!projects/OKR/.claude/skills/lark-okr/
+!projects/OKR/.claude/skills/lark-okr/**
+
 # Secrets and local credentials.
 **/auth.json
 **/.credentials.json
